@@ -1,4 +1,4 @@
-# My Personal Hyprland Configuration
+# CaYeRok dotfiles
 
 > ⚠️ **Note:** This is my personal Hyprland setup and is **not intended for widespread use**.  
 > I frequently tweak and experiment with it as my preferences change.  
