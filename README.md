@@ -1,50 +1,76 @@
-This is my own personal hyprland configuration and is not made to be videly used. It will be changed often as I tinker with it and change my preferences.
-That being said I try to make the configs easy to change and make your own. The configs are split into different files for ease of use.
+# My Personal Hyprland Configuration
 
-Dependencies:
-hypridle (currently unused)
-hyprlock
-hyprpaper
-swaync
-pipewire
-cliphist
-wl-paste
-waybar - currently using: https://github.com/Zilero232/arch-install-kit/tree/master dotfiles for waybar
+> ⚠️ **Note:** This is my personal Hyprland setup and is **not intended for widespread use**.  
+> I frequently tweak and experiment with it as my preferences change.  
 
-Default programs:
--can be set in keybinds.conf as variables mostly
-terminal - kitty (bash shell)
-browser - firefox
-menu - wofi
-IDE - VsCode(code)
-file manager - yazi(CLI)
+The configuration is structured to be **easy to modify**, with files split for convenience to make customization simple.
 
-Keybinds:
-SUPER T - terminal                            
-SUPER W - browser
-SUPER M - menu
-SUPER C - code
-SUPER F - file manager
-SUPER Q - closes window
-SUPER R - reload hyprland and waybar
-SUPER L - lock 
-SUPER V - copy history
-SUPER P - printscreen - whole screen
-SUPER SHIFT P - printscreen - choose area
-SUPER CTRL P - printscreen - window
-SUPER 0-9 - switch workspace
-SUPER ALT 0-0 - send window to workspace
-SUPER ALT SPACE - toggle floating window
-SUPER SPACE - toggle fullscrean
+---
 
-Gestures:
-4 finger swipe - change workspace
-SUPER left click - move window
-SUPER right click - resize window
+## 🛠 Dependencies
+These programs are required to make the setup work:
 
-WIP:
-Remake waybar
-setup hipridle
-add neovim config
-automatically start with apps used regularly
-remake animations
+- `hypridle` (currently unused)  
+- `hyprlock`  
+- `hyprpaper`  
+- `swaync`  
+- `pipewire`  
+- `cliphist`  
+- `wl-paste`  
+- `waybar` – currently using: [Zilero232/arch-install-kit dotfiles](https://github.com/Zilero232/arch-install-kit/tree/master)  
+
+---
+
+## 💻 Default Programs
+Most default programs can be customized in `keybinds.conf` as variables:
+
+| Function       | Program           |
+|----------------|-----------------|
+| Terminal       | kitty (bash)     |
+| Browser        | Firefox          |
+| Menu           | Wofi             |
+| IDE            | VSCode           |
+| File Manager   | Yazi (CLI)       |
+
+---
+
+## ⌨️ Keybinds
+
+| Key Combination           | Action                          |
+|----------------------------|--------------------------------|
+| SUPER + T                 | Open Terminal                  |
+| SUPER + W                 | Open Browser                   |
+| SUPER + M                 | Open Menu                       |
+| SUPER + C                 | Open VSCode                     |
+| SUPER + F                 | Open File Manager               |
+| SUPER + Q                 | Close Window                    |
+| SUPER + R                 | Reload Hyprland and Waybar     |
+| SUPER + L                 | Lock Screen                     |
+| SUPER + V                 | Copy History                     |
+| SUPER + P                 | Screenshot: Full Screen        |
+| SUPER + SHIFT + P         | Screenshot: Select Area        |
+| SUPER + CTRL + P          | Screenshot: Active Window      |
+| SUPER + 0-9               | Switch Workspace                |
+| SUPER + ALT + 0-0         | Move Window to Workspace        |
+| SUPER + ALT + SPACE       | Toggle Floating Window          |
+| SUPER + SPACE             | Toggle Fullscreen               |
+
+---
+
+## 🤌 Gestures
+
+| Gesture                    | Action                          |
+|----------------------------|--------------------------------|
+| 4-finger swipe             | Change Workspace               |
+| SUPER + Left Click         | Move Window                    |
+| SUPER + Right Click        | Resize Window                  |
+
+---
+
+## 🔧 Work In Progress (WIP)
+
+- Remake Waybar configuration  
+- Setup `hypridle`  
+- Add Neovim config  
+- Automatically start frequently used apps  
+- Redo animations  
