@@ -5,18 +5,17 @@
   "position": "top",
   "height": 40,
   
-  "modules-left": [
-    "custom/launcher",
+  "modules-center": [
     "hyprland/workspaces",
-    "custom/weather",
     "custom/updates",
     "custom/cava"
   ],
   
-  "modules-center": [
+  "modules-left": [
     "memory",
     "cpu",
-    "temperature"
+    "temperature",
+    "custom/weather"
   ],
   
   "modules-right": [

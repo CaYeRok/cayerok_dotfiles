@@ -1,11 +1,4 @@
 {
-  // Launcher
-  "custom/launcher": {
-    "format": "",
-    "on-click": "rofi -show drun",
-    "tooltip": false
-  },
-
   // Workspaces (Hyprland)
   "hyprland/workspaces": {
     "on-scroll-up": "hyprctl dispatch workspace r-1",
@@ -20,16 +13,18 @@
       "default": ""
     },
     "persistent-workspaces": {
-      "*": 5
+      "*": 10
     }
   },
 
   // Weather
   "custom/weather": {
-    "exec": "~/.config/waybar/scripts/openweathermap.sh",
-    "interval": 1800,
-    "format": "{}",
-    "tooltip": false
+    	"format": "{}",
+	"interval": 600,
+	"exec": "curl -s 'wttr.in/?format=1'",
+	"tooltip": true,
+	"tooltip-format": "{}"
+
   },
 
   // Check updates pacman or aur
@@ -139,7 +134,7 @@
   // Network
   "network": {
     "format": "{ifname}",
-    "format-wifi": " {essid} ({signalStrength}%)",
+    "format-wifi": "  {essid}",
     "format-ethernet": "  {ifname}",
     "format-disconnected": "Disconnected ⚠",
     "tooltip-format": " {ifname} via {gwaddri}",
