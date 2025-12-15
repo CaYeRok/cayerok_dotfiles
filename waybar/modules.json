@@ -1,0 +1,113 @@
+{
+  "hyprland/workspaces": {
+    "format": "{id}{icon}",
+    "format-icons": {
+	"empty": "",
+	"firefox-1": " ",
+	"firefox-2": " ",
+        "firefox-3": " ",
+        "firefox-4": " ",
+        "firefox-5": " ",
+        "firefox-6": " ",
+        "firefox-7": " ",
+        "firefox-8": " ",
+        "firefox-9": " ",
+        "firefox-10": " ",
+
+        "kitty-1": " ",
+        "kitty-2": " ",
+        "kitty-3": " ",
+	"kitty-4": " ",
+    	"kitty-5": " ",
+    	"kitty-6": " ",
+    	"kitty-7": " ",
+    	"kitty-8": " ",
+    	"kitty-9": " ",
+    	"kitty-10": " ",
+
+    	"code-1": " 󰨞",
+    	"code-2": " 󰨞",
+    	"code-3": " 󰨞",
+    	"code-4": " 󰨞",
+    	"code-5": " 󰨞",
+    	"code-6": " 󰨞",
+    	"code-7": " 󰨞",
+    	"code-8": " 󰨞",
+    	"code-9": " 󰨞",
+    	"code-10": " 󰨞",
+
+    	"yazi-1": " ",
+    	"yazi-2": " ",
+    	"yazi-3": " ",
+    	"yazi-4": " ",
+    	"yazi-5": " ",
+    	"yazi-6": " ",
+    	"yazi-7": " ",
+    	"yazi-8": " ",
+    	"yazi-9": " ",
+    	"yazi-10": " ",
+
+    	"default": ""
+    },
+
+    "on-click": "activate",
+    "sort-by-number": true,
+    "all-outputs": true,
+    "persistent-workspaces": {
+	"1": [],
+	"2": [],
+	"3": [],
+	"4": [],
+	"5": [],
+	"6": [],
+	"7": [],
+	"8": [],
+	"9": [],
+	"10": []
+    }
+  },
+  
+  "hyprland/language": {
+    "format": "⌨ {short}"   
+  },
+
+  "clock": {
+    "format": "  {:%H:%M}",
+    "tooltip-format": "{:%A, %d %B %Y}"
+  },
+
+  "cpu": {
+    "format": "CPU {usage}%",
+    "tooltip": false
+  },
+
+  "memory": {
+    "format": "RAM {percentage}%",
+    "tooltip": false
+  },
+
+  "network": {
+    "format-wifi": "  {essid}",
+    "format-ethernet": "󰈀",
+    "format-disconnected": "⚠",
+    "tooltip": false
+  },
+
+  "pulseaudio": {
+    "format": "  {volume}%",
+    "format-muted": "  {volume}%",
+    "on-click": "pavucontrol"
+  },
+
+  "battery": {
+    "format": "  {capacity}%",
+    "states": {
+      "warning": 30,
+      "critical": 15
+    }
+  },
+
+  "tray": {
+    "spacing": 10
+  }
+}
