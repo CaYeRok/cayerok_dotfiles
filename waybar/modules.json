@@ -1,8 +1,55 @@
 {
   "hyprland/workspaces": {
-    "format": "{id}",
-    "format-window-separator": "\n",
-    "window-rewrite-default": {},
+    "format": "{id}{icon}",
+    "format-icons": {
+	"empty": "",
+	"firefox-1": " ",
+	"firefox-2": " ",
+        "firefox-3": " ",
+        "firefox-4": " ",
+        "firefox-5": " ",
+        "firefox-6": " ",
+        "firefox-7": " ",
+        "firefox-8": " ",
+        "firefox-9": " ",
+        "firefox-10": " ",
+
+        "kitty-1": " ",
+        "kitty-2": " ",
+        "kitty-3": " ",
+	"kitty-4": " ",
+    	"kitty-5": " ",
+    	"kitty-6": " ",
+    	"kitty-7": " ",
+    	"kitty-8": " ",
+    	"kitty-9": " ",
+    	"kitty-10": " ",
+
+    	"code-1": " 󰨞",
+    	"code-2": " 󰨞",
+    	"code-3": " 󰨞",
+    	"code-4": " 󰨞",
+    	"code-5": " 󰨞",
+    	"code-6": " 󰨞",
+    	"code-7": " 󰨞",
+    	"code-8": " 󰨞",
+    	"code-9": " 󰨞",
+    	"code-10": " 󰨞",
+
+    	"yazi-1": " ",
+    	"yazi-2": " ",
+    	"yazi-3": " ",
+    	"yazi-4": " ",
+    	"yazi-5": " ",
+    	"yazi-6": " ",
+    	"yazi-7": " ",
+    	"yazi-8": " ",
+    	"yazi-9": " ",
+    	"yazi-10": " ",
+
+    	"default": ""
+    },
+
     "on-click": "activate",
     "sort-by-number": true,
     "all-outputs": true,
@@ -40,7 +87,7 @@
   },
 
   "network": {
-    "format-wifi": " {essid} {signalStrength}%",
+    "format-wifi": "  {essid}",
     "format-ethernet": "󰈀",
     "format-disconnected": "⚠",
     "tooltip": false
