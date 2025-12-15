@@ -17,7 +17,7 @@ These programs are required to make the setup work:
 - `pipewire`  
 - `cliphist`  
 - `wl-paste`  
-- `waybar` – heavily based on: [Zilero232/arch-install-kit dotfiles](https://github.com/Zilero232/arch-install-kit/tree/master)  
+- `waybar`
 
 ---
 
