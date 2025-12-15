@@ -69,7 +69,6 @@ Most default programs can be customized in `keybinds.conf` as variables:
 
 ## 🔧 Work In Progress (WIP)
 
-- Remake Waybar configuration  
 - Setup `hypridle`  
 - Add Neovim config  
 - Automatically start frequently used apps  
