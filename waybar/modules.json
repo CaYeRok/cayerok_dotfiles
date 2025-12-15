@@ -1,6 +1,8 @@
 {
   "hyprland/workspaces": {
     "format": "{id}",
+    "format-window-separator": "\n",
+    "window-rewrite-default": {},
     "on-click": "activate",
     "sort-by-number": true,
     "all-outputs": true,
@@ -17,6 +19,10 @@
 	"10": []
     }
   },
+  
+  "hyprland/language": {
+    "format": "⌨ {short}"   
+  },
 
   "clock": {
     "format": "  {:%H:%M}",
@@ -24,17 +30,17 @@
   },
 
   "cpu": {
-    "format": "  {usage}%",
+    "format": "CPU {usage}%",
     "tooltip": false
   },
 
   "memory": {
-    "format": " {percentage}%",
+    "format": "RAM {percentage}%",
     "tooltip": false
   },
 
   "network": {
-    "format-wifi": "  {signalStrength}%",
+    "format-wifi": " {essid} {signalStrength}%",
     "format-ethernet": "󰈀",
     "format-disconnected": "⚠",
     "tooltip": false
@@ -42,7 +48,7 @@
 
   "pulseaudio": {
     "format": "  {volume}%",
-    "format-muted": " {volume}%",
+    "format-muted": "  {volume}%",
     "on-click": "pavucontrol"
   },
 
