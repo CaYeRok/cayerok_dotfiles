@@ -2,13 +2,14 @@
   "layer": "top",
   "position": "top",
   "height": 46,
-  "margin-top": 6,
+  "margin-top": 0,
   "margin-left": 0,
   "margin-right": 0,
 
   "modules-left": [
     "memory",
-    "cpu"
+    "cpu",
+    "custom/media"
   ],
 
   "modules-center": [

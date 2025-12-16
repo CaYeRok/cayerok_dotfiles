@@ -71,6 +71,7 @@
 
     	"default": ""
     },
+
     "on-click": "activate",
     "sort-by-number": true,
     "all-outputs": true,
@@ -123,8 +124,8 @@
   "battery": {
     "format": "{icon} {capacity}%",
     "interval": 60,
-    "format-charging": "{icon} {capacity}%",
-    "format-icons": {
+    "format-charging": "{icon}{capacity}%",
+    "format-icons": [
 	"default": [
 	"󰁺",
 	"󰁻",
@@ -139,17 +140,7 @@
 	],
 	"charging": [
 	"󰢜 ",
-	"󰂆 ",
-	"󰂇 ",
-	"󰂈 ",
-	"󰢝 ",
-	"󰂉 ",
-	"󰢞 ",
-	"󰂊 ",
-	"󰂋 ",
-	"󰂅 "
-	],
-    },  
+    ],
     "states": {
       "warning": 30,
       "critical": 15
@@ -158,17 +149,5 @@
 
   "tray": {
     "spacing": 10
-  },
-  "custom/media": {
-     "format": "{icon} {}",
-     "escape": true,
-     "return-type": "json",
-     "max-length": 40,
-     "on-click": "playerctl play-pause",
-     "on-click-right": "playerctl stop",
-     "smooth-scrolling-threshold": 10, // This value was tested using a trackpad, it should be lowered if using a mouse.
-     "on-scroll-up": "playerctl next",
-     "on-scroll-down": "playerctl previous",
-     "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null", // Script in resources/custom_modules folder
-}
+  }
 }

@@ -1,6 +1,6 @@
 * {
   border: none;
-  border-radius: 8px;
+  border-radius: 0px;
   font-family: "JetBrainsMono Nerd Font";
   font-size: 14px;
   min-height: 0;
@@ -33,6 +33,7 @@ window#waybar {
   background: #2e3440;
   border-radius: 8px;
 }
+
 
 #clock,
 #cpu,
