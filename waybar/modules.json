@@ -110,7 +110,7 @@
   "network": {
     "format-wifi": "  {essid}",
     "format-ethernet": "󰈀",
-    "format-disconnected": "⚠",
+    "format-disconnected": "⚠ disconnected",
     "tooltip": false
   },
 

@@ -31,9 +31,8 @@ window#waybar {
   padding: 0 10px;
   margin: 4px;
   background: #2e3440;
-  border-radius: 8px;
+  border-radius: 0px;
 }
-
 
 #clock,
 #cpu,
@@ -53,4 +52,8 @@ window#waybar {
 
 #battery.critical {
   color: #bf616a;
+}
+
+#battery.charging {
+  color: #12ed0e;
 }
