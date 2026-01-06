@@ -18,6 +18,7 @@ These programs are required to make the setup work:
 - `cliphist`  
 - `wl-paste`  
 - `waybar`
+- `jq`
 
 ---
 
