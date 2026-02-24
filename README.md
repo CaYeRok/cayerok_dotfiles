@@ -12,7 +12,12 @@ These programs are required to make the setup work:
 
 - `hypridle` (currently unused)  
 - `hyprlock`  
-- `hyprpaper`  
+- `hyprpaper`
+- `hyprgraphics`
+- `hyprcursor`
+- `hyprlang`
+- `hyprutils`
+- `aquamarine`  
 - `swaync`  
 - `pipewire`  
 - `cliphist`  
@@ -74,3 +79,4 @@ Most default programs can be customized in `keybinds.conf` as variables:
 - Add Neovim config  
 - Automatically start frequently used apps  
 - Redo animations  
+- Change CSS for waybar
