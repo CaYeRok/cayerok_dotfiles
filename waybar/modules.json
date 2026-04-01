@@ -173,12 +173,14 @@
     }
   },
 
-  "custom/weather": {
-    "exec": "curl -s 'https://wttr.in/?format=%c+%t'",
-    "interval": 1800,
-    "format": "{}",
-    "tooltip": false
-  },
+"custom/weather": {
+  "exec": "~/.config/waybar/weather.sh",
+  "exec-on-event": false,
+  "interval": 1800,
+  "format": "{}",
+  "return-type": "json",
+  "tooltip": true
+},
 
   "tray": {
     "spacing": 8,
