@@ -1,22 +1,22 @@
 {
   "layer": "top",
   "position": "top",
-  "height": 46,
-  "margin-top": 0,
-  "margin-left": 0,
-  "margin-right": 0,
-
+  "height": 48,
+  "margin-top": 8,
+  "margin-left": 10,
+  "margin-right": 10,
   "modules-left": [
-    "memory",
     "cpu",
+    "temperature",
+    "memory",
+    "disk",
     "custom/media"
   ],
-
   "modules-center": [
     "hyprland/workspaces"
   ],
-
   "modules-right": [
+    "custom/weather",
     "hyprland/language",
     "pulseaudio",
     "network",
@@ -24,6 +24,5 @@
     "clock",
     "tray"
   ],
-
   "include": "modules.json"
 }

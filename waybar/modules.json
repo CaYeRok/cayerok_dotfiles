@@ -103,83 +103,99 @@
     "format": "⌨ {short}"   
   },
 
-  "clock": {
+"clock": {
     "format": "  {:%H:%M}",
-    "tooltip-format": "{:%A, %d %B %Y}"
+    "format-alt": "{:%a %d %b  %H:%M}",
+    "tooltip-format": "<tt>{calendar}</tt>",
+    "on-click": "mode"
   },
 
-  "cpu": {
-    "format": "CPU {usage}%",
+"cpu": {
+    "format": "󰻠 {usage}%",
+    "format-alt": "󰻠 {avg_frequency:.1f}GHz",
+    "on-click": "mode",
+    "interval": 2,
     "tooltip": false
   },
 
-  "memory": {
-    "format": "RAM {percentage}%",
+"temperature": {
+    "critical-threshold": 80,
+    "format": "{icon} {temperatureC}°C",
+    "format-icons": ["󱃃", "󰔏", "󱃂"],
+    "tooltip": false
+  },
+
+"memory": {
+    "format": "󰍛 {used:.1f}G/{total:.1f}G",
     "tooltip": false
   },
 
   "network": {
-    "format-wifi": "  {essid}",
-    "format-ethernet": "󰈀",
-    "format-disconnected": "⚠ disconnected",
-    "tooltip": false
+    "format-wifi": "  {essid} {signalStrength}%",
+    "format-ethernet": "󰈀 {ipaddr}",
+    "format-disconnected": "󰤭 offline",
+    "tooltip-format-wifi": "{ipaddr} via {gwaddr}\n↓ {bandwidthDownBits}  ↑ {bandwidthUpBits}",
+    "interval": 5
+  },
+
+"disk": {
+    "interval": 30,
+    "format": "󰋊 {free}",
+    "path": "/",
+    "tooltip-format": "{path}: {used} used of {total} ({percentage_used}%)"
   },
 
   "pulseaudio": {
-    "format": "  {volume}%",
-    "format-muted": "  {volume}%",
-    "on-click": "pavucontrol"
+    "format": "{icon} {volume}%",
+    "format-muted": "󰝟  muted",
+    "format-icons": {
+      "headphone": "󰋋",
+      "headset": "󰋎",
+      "default": ["󰕿 ", "󰖀 ", "󰕾 "]
+    },
+    "on-click": "pavucontrol",
+    "tooltip": false
   },
 
   "battery": {
     "format": "{icon} {capacity}%",
-    "interval": 60,
-    "format-charging": "{icon} {capacity}%",
+    "format-charging": "{icon} {capacity}% ⚡",
+    "format-time": "{H}h {M}m",
+    "tooltip-format": "Time remaining: {time}",
+    "interval": 30,
     "format-icons": {
-	"default": [
-	"󰁺",
-	"󰁻",
-	"󰁼",
-	"󰁽",
-	"󰁽",
-	"󰁿",
-	"󰂀",
-	"󰂁",
-	"󰂂",
-	"󰁹"
-	],
-	"charging": [
-	"󰢜 ",
-	"󰂆 ",
-	"󰂇 ",
-	"󰂈 ",
-	"󰢝 ",
-	"󰂉 ",
-	"󰢞 ",
-	"󰂊 ",
-	"󰂋 ",
-	"󰂅 "
-	],
-    },  
+      "default": ["󰁺","󰁻","󰁼","󰁽","󰁽","󰁿","󰂀","󰂁","󰂂","󰁹"],
+      "charging": ["󰢜 ","󰂆 ","󰂇 ","󰂈 ","󰢝 ","󰂉 ","󰢞 ","󰂊 ","󰂋 ","󰂅 "]
+    },
     "states": {
       "warning": 30,
       "critical": 15
     }
   },
 
-  "tray": {
-    "spacing": 10
+  "custom/weather": {
+    "exec": "curl -s 'https://wttr.in/?format=%c+%t'",
+    "interval": 1800,
+    "format": "{}",
+    "tooltip": false
   },
+
+  "tray": {
+    "spacing": 8,
+    "icon-size": 16
+  },
+
   "custom/media": {
-     "format": "{icon} {}",
-     "escape": true,
-     "return-type": "json",
-     "max-length": 40,
-     "on-click": "playerctl play-pause",
-     "on-click-right": "playerctl stop",
-     "smooth-scrolling-threshold": 10, // This value was tested using a trackpad, it should be lowered if using a mouse.
-     "on-scroll-up": "playerctl next",
-     "on-scroll-down": "playerctl previous",
-     "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null", // Script in resources/custom_modules folder
-}
+    "format": "{icon} {}",
+    "escape": true,
+    "return-type": "json",
+    "max-length": 35,
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl stop",
+    "on-scroll-up": "playerctl next",
+    "on-scroll-down": "playerctl previous",
+    "smooth-scrolling-threshold": 10,
+    "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null"
+  },
+
 }
