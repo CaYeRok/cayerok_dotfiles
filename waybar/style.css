@@ -1,59 +1,120 @@
 * {
   border: none;
-  border-radius: 0px;
+  border-radius: 4px;
   font-family: "JetBrainsMono Nerd Font";
   font-size: 14px;
   min-height: 0;
 }
 
 window#waybar {
-  background: rgba(20, 20, 20, 0.9);
-  color: #ffffff;
+  background: rgba(29, 32, 33, 0.93); /* Gruvbox hard bg */
+  color: #ebdbb2;
 }
 
+/* ── Workspaces ── */
 #workspaces button {
-  padding: 4px 8px;
-  margin: 4px;
+  padding: 2px 10px;
+  margin: 3px 2px;
   background: transparent;
-  color: #bbbbbb;
+  color: #a89984;
+  border-radius: 4px;
 }
 
 #workspaces button.active {
-  background: #5e81ac;
-  color: #ffffff;
+  background: #d79921; /* yellow */
+  color: #1d2021;
+  font-weight: bold;
 }
 
 #workspaces button:hover {
-  background: #434c5e;
+  background: #504945;
+  color: #ebdbb2;
 }
 
-#language {
-  padding: 0 10px;
-  margin: 4px;
-  background: #2e3440;
-  border-radius: 0px;
-}
-
+/* ── Shared base ── */
 #clock,
 #cpu,
 #memory,
 #network,
 #pulseaudio,
 #battery,
+#language,
 #tray {
-  padding: 0 10px;
-  margin: 4px;
-  background: #2e3440;
+  padding: 0 12px;
+  margin: 3px 4px;
+  border-radius: 4px;
+  color: #1d2021; /* dark text on colored bg */
+  font-weight: bold;
+}
+
+/* ── Per-module accent colors ── */
+#clock {
+  background: #458588; /* Gruvbox blue */
+  color: #ebdbb2;
+}
+
+#cpu {
+  background: #cc241d; /* Gruvbox red */
+  color: #ebdbb2;
+}
+
+#memory {
+  background: #b16286; /* Gruvbox purple */
+  color: #ebdbb2;
+}
+
+#network {
+  background: #689d6a; /* Gruvbox aqua */
+  color: #1d2021;
+}
+
+#network.disconnected {
+  background: #928374; /* Gruvbox gray */
+  color: #ebdbb2;
+}
+
+#pulseaudio {
+  background: #d65d0e; /* Gruvbox orange */
+  color: #ebdbb2;
+}
+
+#pulseaudio.muted {
+  background: #504945;
+  color: #a89984;
+}
+
+#battery {
+  background: #98971a; /* Gruvbox green */
+  color: #1d2021;
 }
 
 #battery.warning {
-  color: #ebcb8b;
+  background: #d79921; /* yellow */
+  color: #1d2021;
 }
 
 #battery.critical {
-  color: #bf616a;
+  background: #cc241d; /* red */
+  color: #ebdbb2;
+  animation: blink 1s step-start infinite;
 }
 
 #battery.charging {
-  color: #12ed0e;
+  background: #b8bb26; /* bright green */
+  color: #1d2021;
+}
+
+#language {
+  background: #d79921; /* Gruvbox yellow */
+  color: #1d2021;
+}
+
+#tray {
+  background: #3c3836; /* neutral, less intrusive */
+  color: #ebdbb2;
+}
+
+/* ── Blink for critical battery ── */
+@keyframes blink {
+  50% { opacity: 0.4; }
 }
