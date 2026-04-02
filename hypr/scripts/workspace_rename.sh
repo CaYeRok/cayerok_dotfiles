@@ -17,5 +17,6 @@ if [[ -z "$MASTER_CLASS" ]]; then
 else
     NAME="$(echo "$MASTER_CLASS" | tr '[:upper:]' '[:lower:]')-$WS_ID"
 fi
+
 # Rename the workspace
 hyprctl dispatch renameworkspace "$WS_ID $NAME"
