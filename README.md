@@ -1,6 +1,6 @@
 # CaYeRok dotfiles
 
-> ⚠️ **Note:** This is my personal Hyprland setup and is **not intended for widespread use**.  
+> ⚠️ **Note:** This is my personal Hyprland setup and is ** mostly not intended for widespread use**.  
 > I frequently tweak and experiment with it as my preferences change.  
 
 The configuration is structured to be **easy to modify**, with files split for convenience to make customization simple.
