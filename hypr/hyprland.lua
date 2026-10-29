@@ -1,0 +1,10 @@
+
+require("conf.monitors")
+require("conf.autostart")
+require("conf.keybinds")
+require("conf.animations")
+require("conf.rules")
+require("conf.appearance")
+require("conf.monitors")
+require("conf.basic")
+require("conf.scripts")
