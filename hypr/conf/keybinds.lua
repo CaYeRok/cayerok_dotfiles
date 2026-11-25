@@ -17,6 +17,7 @@ hl.env("fileManager", fileManager)
 hl.bind("switch:on:Lid Switch", hl.dsp.exec_cmd("hyprlock --immediate"), { locked = true })
 
 -- launch apps
+hl.bind("SUPER + SUPER_L", hl.dsp.exec_cmd("~/.config/hypr/scripts/workspace_rename.sh"), { release = true })
 hl.bind(mainMod .. " + T", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.window.kill())
 hl.bind(mainMod .. " + Q", function()
