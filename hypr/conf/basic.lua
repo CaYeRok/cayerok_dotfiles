@@ -19,4 +19,11 @@ hl.config({
     cursor = {
         no_warps = true,
     },
+	
+
+    input = {
+	kb_layout = "us,cz",
+	kb_variant = ",qwerty",
+	kb_options = "grp:alt_shift_toggle",
+    },
 })
